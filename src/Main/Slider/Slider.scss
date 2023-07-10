@@ -1,0 +1,80 @@
+.slide {
+  display: flex;
+  flex-direction: column;
+  &-essentials {
+    &-responsive {
+      display: none;
+      margin-bottom: 30px;
+    }
+  }
+  .headline, .description {
+    text-align: left;
+  }
+  .description {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  &-upper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-favours {
+    margin-bottom: 20px;
+    &-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      column-gap: 30px;
+      row-gap: 10px;
+      &-item {
+        text-align: left;
+        display: inline-grid;
+        font-size: 17px;
+      }
+    }
+  }
+  &-other {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 30px;
+    .terms, .price {
+      display: inline-flex;
+      flex-direction: column;
+      p {
+        display: inline-flex;
+        &:first-child {
+          font-size: 15px;
+        }
+        &:last-child {
+          font-weight: 700;
+          margin-top: 5px;
+          font-size: 17px;
+        }
+      }
+    }
+  }
+  &-img {
+    img {
+      height: 100%;
+    }
+  }
+  &-imgs {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 100%);
+    column-gap: 30px;
+    margin-top: 30px;
+    height: 100px;
+    img {
+      cursor: pointer;
+      height: 100%;
+      border: 2px solid #fff;
+      object-fit: cover;
+      &.active {
+        outline: 2px solid #135EE4;
+      }
+    }
+  }
+}

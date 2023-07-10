@@ -1,0 +1,46 @@
+@import '../../Circles';
+
+.circle {
+  &-shape {
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    border: 10px solid #fff;
+  }
+  &-chestnut {
+    background: $chestnut;
+  }
+  &-cyan {
+    background: $cyan;
+  }
+  &-brown {
+    background: $brown;
+  }
+  &-sandy {
+    background: $sandy;
+  }
+  &-ashy {
+    background: $ashy;
+  }
+  &-grey {
+    background: $grey;
+  }
+  &-black {
+    background: $black;
+  }
+  &-light {
+    background: $floor-white;
+  }
+  &-moraine {
+    background: $floor-brown;
+  }
+  &-nut {
+    background: $floor-beige;
+  }
+  &-mahogany {
+    background: $floor-red;
+  }
+  &-golden {
+    background: $floor-yellow;
+  }
+}
